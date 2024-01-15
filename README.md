@@ -1,2 +1,9 @@
-# a11y-developer-training
-Accessibility Training
+# Developer Accessibility Training
+
+TODO: ACCESSIBILITY TRAINING SYNOPSIS
+
+## Exercise #1
+
+## Exercise #2
+
+## Exercise #3
