@@ -21,7 +21,23 @@ Issues can be related to keyboard navigation, tagging or other accessibility con
 
 Please Note: All fixes should remain in the index.html file, you should not need to modify main.css or forms.js file
 
-Hint: There are 5 issue types that will need to be addressed
+Hint: There are 4 issue types that will need to be addressed
+
+Issue #1 : Non required fields are skipped entirely
+Problem: Keyboard users, and those using assistive technologies will not be able to access these fields
+Solution: Remove the use of tabindex="-1" entirely
+
+Issue #2 Expected <label> element missing. All form inputs must include a semantic label, and have an explicit association between labels and inputs
+Problem: If a screen reader comes across an input field without a label it will try to guess what content is associated to the field
+Solution: Explicitly assign labels in the form with the appropriate tags. Ensure all labels have the "for" attribute, and input fields include their respective ID
+
+Issue #3 Decorative Icons with no meaning get read
+Problem:  Images that are extraneous to meaningful content may hinder the experience of those relying on assistive technology
+Solution: Add an aria-hidden attribute to purely decorative content e.g icons
+
+Issue #4 Improper element used, Submit Button should not be a button styled link, and instead be a button
+Problem: Links <a> are intended for navigation, while buttons <buttons> are semantically correct elements for triggering actions
+Solution: Use <button> or <input> with type=Submit
 
 -->
 
