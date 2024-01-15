@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="form.js" type="text/javascript" defer></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- INSTRUCTIONS:
+
+Identify and address accessibility in a form to ensure it is usable by people with disabilities
+Identify, document and address accessibility related issues in the html form. The objective
+is to fix any identified issue in order to make this form accessible.
+
+Issues can be related to keyboard navigation, tagging or other accessibility concerns discussed in the course.
+
+Please Note: All fixes should remain in the index.html file, you should not need to modify main.css or forms.js file
+
+Hint: There are 5 issues to be addressed
+
+-->
+
+<body>
+  <div class="container">
+    <h1 id="form_legend" class="text-center">Register for Information</h1>
+    <hr>
+
+    <form class="form-horizontal" action="#" method="get" id="contact_form">
+
+      <!-- Form Name -->
+      <div role="group" for="form_legend" aria-labelledby="form_legend">
+
+          <!-- Element: Text input Name -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Name <small>(Required)</small></label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="name" name="name" placeholder="Name" class="form-control" type="text" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Element: Text input - Email Address -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="email">E-Mail <small>(Required)</small></label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input id="email" name="email" placeholder="E-Mail Address" class="form-control" type="email" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Element: Text input - Address -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="address">Address</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="address" name="address" placeholder="Address" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Element: Text input - City -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="city">City</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input id="city" name="city" placeholder="City" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Element: Select - Province -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="province">Province</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select id="province" name="province" class="form-control selectpicker">
+                <option value=" ">Please select your province</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>Newfoundland and Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!--Element: Text input - Postal Code -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="postal_code">Postal Code</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></span>
+              <input id="postal_code" name="postal_code" placeholder="Postal Code" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Element: Checkbox - I want to receive -->
+        <fieldset class="form-group">
+          <legend class="col-md-4 control-label">I want to receive:</legend>
+          <div class="col-md-4">
+            <div class="checkbox">
+                <input type="checkbox" id="crm_signup_newsletters" name="crm_signup" value="newsletters"><label for="crm_signup_newsletters">Newsletters</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="crm_signup_important" name="crm_signup" value="important"><label for="crm_signup_important">Only Important Notification</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="crm_signup_spam" name="crm_signup" value="spam" checked><label for="crm_signup_spam">Spam Me! <i class="bi bi-emoji-smile"></i></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="form-group">
+          <div class="col-md-4 mx-auto float-none">
+            <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div> <!-- /.container -->
+</body>
+
+</html>

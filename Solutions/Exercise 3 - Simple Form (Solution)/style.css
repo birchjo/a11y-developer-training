@@ -1,0 +1,12 @@
+legend {
+    font-size: inherit;
+    border: inherit;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.float-none {
+    float: none;
+}
