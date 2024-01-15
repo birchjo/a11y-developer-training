@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="form.js" type="text/javascript" defer></script>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="form.js" type="text/javascript" defer></script>
 </head>
 
 <!-- INSTRUCTIONS:
@@ -21,7 +21,7 @@ Issues can be related to keyboard navigation, tagging or other accessibility con
 
 Please Note: All fixes should remain in the index.html file, you should not need to modify main.css or forms.js file
 
-Hint: There are 5 issues to be addressed
+Hint: There are 5 issue types that will need to be addressed
 
 -->
 
@@ -33,14 +33,14 @@ Hint: There are 5 issues to be addressed
     <form class="form-horizontal" action="#" method="get" id="contact_form">
 
       <!-- Form Name -->
-      <div role="group" for="form_legend" aria-labelledby="form_legend">
+      <div role="group" aria-labelledby="form_legend">
 
           <!-- Element: Text input Name -->
         <div class="form-group">
           <label class="col-md-4 control-label" for="name">Name <small>(Required)</small></label>
           <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
               <input id="name" name="name" placeholder="Name" class="form-control" type="text" required>
             </div>
           </div>
@@ -51,7 +51,7 @@ Hint: There are 5 issues to be addressed
           <label class="col-md-4 control-label" for="email">E-Mail <small>(Required)</small></label>
           <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
               <input id="email" name="email" placeholder="E-Mail Address" class="form-control" type="email" required>
             </div>
           </div>
@@ -62,7 +62,7 @@ Hint: There are 5 issues to be addressed
           <label class="col-md-4 control-label" for="address">Address</label>
           <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></span>
               <input id="address" name="address" placeholder="Address" class="form-control" type="text">
             </div>
           </div>
@@ -84,7 +84,7 @@ Hint: There are 5 issues to be addressed
           <label class="col-md-4 control-label" for="province">Province</label>
           <div class="col-md-4 selectContainer">
             <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list" aria-hidden="true"></i></span>
               <select id="province" name="province" class="form-control selectpicker">
                 <option value=" ">Please select your province</option>
                 <option>Alberta</option>
@@ -126,7 +126,7 @@ Hint: There are 5 issues to be addressed
                 <input type="checkbox" id="crm_signup_important" name="crm_signup" value="important"><label for="crm_signup_important">Only Important Notification</label>
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="crm_signup_spam" name="crm_signup" value="spam" checked><label for="crm_signup_spam">Spam Me! <i class="bi bi-emoji-smile"></i></label>
+                <input type="checkbox" id="crm_signup_spam" name="crm_signup" value="spam" checked><label for="crm_signup_spam">Spam Me! <i class="bi bi-emoji-smile" aria-hidden="true"></i></label>
             </div>
           </div>
         </fieldset>
