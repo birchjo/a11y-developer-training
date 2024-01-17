@@ -29,121 +29,127 @@ Hint: There are 4 issue types that will need to be addressed
 -->
 
 <body>
-  <div class="container">
-    <h1 id="form_legend" class="text-center">Register for Information</h1>
-    <hr>
+  <main role="main">
+    <div class="container">
+      <h1 id="form_legend" class="text-center">Register for Information</h1>
+      <hr>
+    </div>
 
-    <form class="form-horizontal" action="#" method="get" id="contact_form">
+    <div class="container">
+      <form class="form-horizontal" action="#" method="get" id="contact_form">
 
-      <!-- Form Name -->
-      <div role="group" aria-labelledby="form_legend">
+        <!-- Form Name -->
+        <div role="group" aria-labelledby="form_legend">
 
           <!-- Element: Text input Name -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">Name <small>(Required)</small></span>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="name" placeholder="Name" class="form-control" type="text" required>
+          <div class="form-group">
+            <span class="col-md-4 control-label">Name <small>(Required)</small></span>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="name" placeholder="Name" class="form-control" type="text" required>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Element: Text input - Email Address -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">E-Mail <small>(Required)</small></span>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-              <input name="email" placeholder="E-Mail Address" class="form-control" type="email" required>
+          <!-- Element: Text input - Email Address -->
+          <div class="form-group">
+            <span class="col-md-4 control-label">E-Mail <small>(Required)</small></span>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" placeholder="E-Mail Address" class="form-control" type="email" required>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Element: Text input - Address -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">Address</span>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-              <input name="address" placeholder="Address" class="form-control" type="text" tabindex="-1">
+          <!-- Element: Text input - Address -->
+          <div class="form-group">
+            <span class="col-md-4 control-label">Address</span>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="address" placeholder="Address" class="form-control" type="text" tabindex="-1">
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Element: Text input - City -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">City</span>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-              <input name="city" placeholder="City" class="form-control" type="text" tabindex="-1">
+          <!-- Element: Text input - City -->
+          <div class="form-group">
+            <span class="col-md-4 control-label">City</span>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input name="city" placeholder="City" class="form-control" type="text" tabindex="-1">
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Element: Select - Province -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">Province</span>
-          <div class="col-md-4 selectContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-              <select name="province" class="form-control selectpicker" tabindex="-1">
-                <option value=" ">Please select your province</option>
-                <option>Alberta</option>
-                <option>British Columbia</option>
-                <option>Manitoba</option>
-                <option>Newfoundland and Labrador</option>
-                <option>Northwest Territories</option>
-                <option>Nova Scotia</option>
-                <option>Nunavut</option>
-                <option>Ontario</option>
-                <option>Prince Edward Island</option>
-                <option>Quebec</option>
-                <option>Saskatchewan</option>
-                <option>Yukon</option>
-              </select>
+          <!-- Element: Select - Province -->
+          <div class="form-group">
+            <span class="col-md-4 control-label">Province</span>
+            <div class="col-md-4 selectContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                <select name="province" class="form-control selectpicker" tabindex="-1">
+                  <option value=" ">Please select your province</option>
+                  <option>Alberta</option>
+                  <option>British Columbia</option>
+                  <option>Manitoba</option>
+                  <option>Newfoundland and Labrador</option>
+                  <option>Northwest Territories</option>
+                  <option>Nova Scotia</option>
+                  <option>Nunavut</option>
+                  <option>Ontario</option>
+                  <option>Prince Edward Island</option>
+                  <option>Quebec</option>
+                  <option>Saskatchewan</option>
+                  <option>Yukon</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--Element: Text input - Postal Code -->
-        <div class="form-group">
-          <span class="col-md-4 control-label">Postal Code</span>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-              <input type="text" name="postal_code" placeholder="Postal Code" class="form-control" tabindex="-1">
+          <!--Element: Text input - Postal Code -->
+          <div class="form-group">
+            <span class="col-md-4 control-label">Postal Code</span>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                <input type="text" name="postal_code" placeholder="Postal Code" class="form-control" tabindex="-1">
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Element: Checkbox - I want to receive -->
-        <fieldset class="form-group">
-          <legend class="col-md-4 control-label">I want to receive:</legend>
-          <div class="col-md-4">
-            <div class="checkbox">
+          <!-- Element: Checkbox - I want to receive -->
+          <fieldset class="form-group">
+            <legend class="col-md-4 control-label">I want to receive:</legend>
+            <div class="col-md-4">
+              <div class="checkbox">
                 <input type="checkbox" name="crm_signup" value="newsletters" tabindex="-1"><span>Newsletters</span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="crm_signup" value="important" tabindex="-1"><span>Only Important
+                  Notification</span>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" name="crm_signup" value="spam" checked tabindex="-1"><span>Spam Me! <i
+                    class="bi bi-emoji-smile"></i></span>
+              </div>
             </div>
-            <div class="checkbox">
-                <input type="checkbox" name="crm_signup" value="important" tabindex="-1"><span>Only Important Notification</span>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" name="crm_signup" value="spam" checked tabindex="-1"><span>Spam Me! <i class="bi bi-emoji-smile"></i></span>
-            </div>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <!-- Submit -->
-        <div class="form-group">
-          <div class="col-md-4 mx-auto float-none">
-            <a id="form_submit" href="#" class="btn btn-primary btn-block">SUBMIT</a>
+          <!-- Submit -->
+          <div class="form-group">
+            <div class="col-md-4 mx-auto float-none">
+              <a id="form_submit" href="#" class="btn btn-primary btn-block">SUBMIT</a>
+            </div>
           </div>
+
         </div>
-
-      </div>
-    </form>
-  </div> <!-- /.container -->
+      </form>
+    </div> <!-- /.container -->
+  </main>
 </body>
 
 </html>
